@@ -15,11 +15,15 @@ body{
 .menu__header {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.negrita-header {
+.negrita {
     font-weight: 700;
+    
+    color: #464646;
 }
+
 
 header img {
     margin: 0px 10px 0 10px;
@@ -131,7 +135,7 @@ header img {
     align-items: center;
 }
 
-.skills-container h2 {
+.encabezados {
     text-align: center;
     width: auto;
     color: #464646;
@@ -152,15 +156,93 @@ header img {
     justify-content: center;
     width: 100px;
     height: 100px;
+        
 }
 
 .tecnologia-item img {
     width: 100px;
     border-radius: 10px;
+    transition: all 0.2s;
+    filter: blur(0.5px) saturate(180%);
 }
 
-.chart {
-    width: 10px;
+.tecnologia-item img:hover {
+    filter: none;
+    -webkit-transform:scale(-1);transform:scale(1.3);
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3));
 }
 
 
+/* Hobbies */
+
+.hobbies-container {
+    padding: 70px 15% 50px 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pasatiempos {
+    display: flex;
+    margin-top: 50px;
+    gap: 70px;
+}
+
+.pasatiempos-item{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+}
+
+.pasatiempos-item img {
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(6px 5px 8px rgba(0, 0, 0, 0.4));
+}
+
+
+/* Formacion academica */
+
+.formacion {
+    background-color: #EAF2FD;
+}
+
+.formacion-container {
+    padding: 70px 15% 50px 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formacion-lista {
+    display: flex;
+    margin-top: 50px;
+    gap: 60px;
+}
+
+.formacion-lista-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contenedor-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 400px;
+    height: 300px;
+    margin-bottom: 10px;
+    
+}
+
+.formacion-img {
+    width: 150px;
+    transition: all 0.5s;
+}
+
+.formacion-img:hover {
+    -webkit-transform:scale(-1);transform:scale(1.3);
+}
