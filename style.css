@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Raleway", sans-serif;
+    background-color: #EDEDED;
+}
+
+/* Header */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0 70px 0;
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+}
+
+.negrita-header {
+    font-weight: 700;
+}
+
+header img {
+    margin: 0px 10px 0 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.menu-lista{
+    display: flex;
+    gap: 20px;
+}
+
+.menu-lista-item a{
+    text-decoration: none;
+    color: #464646;
+}
+
+/* Titulo */
+
+.titulo {
+    padding-bottom: 30px;
+}
+
+.titulo-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15% 0 15%;
+}
+
+.perfil-imagen {
+    width: 400px;
+    height: 450px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px 5px rgba(20, 20, 20, 0.2);
+}
+
+.descripcion {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.descripcion h2 {
+    color: #464646;
+    font-weight: 700;
+    font-size: 55px;
+}
+
+.descripcion h3 {
+    font-size: 25px;
+}
+
+.lista-redes-pdf {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.lista-redes a img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.descargar-cv {
+    background-color: brown;
+    color: #EDEDED;
+    font-weight: 600;
+    padding: 13px;
+    border-radius: 5px;
+}
+
+
+/* Sobre mi */
+
+.sobre-mi{
+    background-color: #EAF2FD;
+    padding: 60px 15% 60px 15%;
+}
+
+.texto-sobre-mi {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+}
+
+.texto-sobre-mi h3 {
+    color: #464646;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.texto-sobre-mi p {
+    line-height: 20px;
+}
+
+
+/* Skills */
+
+.skills {
+    padding: 50px 15% 50px 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-container h2 {
+    text-align: center;
+    width: auto;
+    color: #464646;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.tecnologias {
+    display: flex;
+    margin-top: 50px;
+    gap: 50px;
+    
+}
+
+.tecnologia-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+.tecnologia-item img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.chart {
+    width: 10px;
+}
+
+
