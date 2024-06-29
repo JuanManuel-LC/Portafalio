@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "Raleway", sans-serif;
     background-color: #EDEDED;
@@ -128,6 +132,7 @@ header img {
 
 .texto-sobre-mi p {
     line-height: 20px;
+    font-size: 16px;
 }
 
 
