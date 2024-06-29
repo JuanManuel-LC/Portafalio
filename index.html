@@ -36,7 +36,7 @@
                     <ul class="lista-redes-pdf">
                         <li class="lista-redes"><a href="#"><img src="Assets/signo-de-github.png" alt="logo-github"></a></li>
                         <li class="lista-redes"><a href="#"><img src="Assets/linkedin.png" alt="logo-LinkedIn"></a></li>
-                        <li class="lista-redes"><div class="descargar-cv">Descargar CV</div></li>
+                        <li class="lista-redes"><a class="link-cv" href="Assets/CV/CV JUAN MANUEL LAME CARMONA.pdf" download=""><div class="descargar-cv">Descargar CV</div></a></li>
                     </ul>
                 </div>
             </div>
@@ -165,23 +165,23 @@
                     <p>¿Quieres contactarme?</p>
                     <p>Completa el siguiente formulario y me pondré en contacto con usted lo antes posible</p>
                 </div>
-                <div class="inputs-container">
+                <form class="inputs-container">
                     <ul class="inputs">
                         <li class="input-item-box">
                             <label class="label-input" for="nombre">Nombre</label>
-                            <input class="input-item" type="text" name="nombre">
+                            <input class="input-item" type="text" name="nombre" minlength="5" required>
                         </li>
                         <li class="input-item-box">
                             <label class="label-input" for="email">Email</label>
-                            <input class="input-item" type="email" name="email" id="email">
+                            <input class="input-item" type="email" name="email" id="email" minlength="8" required>
                         </li>
                         <li class="input-item-box">
                             <label class="label-input" for="asunto">Asunto</label>
-                            <textarea name="asunto" id="asunto" placeholder="Escribe algo aquí"></textarea>
+                            <textarea name="asunto" id="asunto" placeholder="Razon por la que me contactas"></textarea>
                         </li>
                         <input class="submit-boton" type="submit">
                     </ul>
-                </div>
+                </form>
             </div>
         </div>
     </section>
