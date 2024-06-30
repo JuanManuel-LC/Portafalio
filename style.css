@@ -9,6 +9,11 @@ body{
     background-color: #EDEDED;
 }
 
+.todo {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Header */
 .menu {
     display: flex;
@@ -49,6 +54,9 @@ header img {
 
 .titulo {
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titulo-container {
@@ -435,4 +443,16 @@ footer {
 
 strong {
     font-weight: bold;
+}
+
+
+/* Para Tablets */
+@media (min-width: 768px){
+
+}
+
+
+/* Para dispositivos mobiles */
+@media (min-width: 360px){
+
 }
