@@ -129,7 +129,7 @@ header img {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 70%;
+    /* width: 70%; */
 }
 
 .texto-sobre-mi h3 {
@@ -164,7 +164,9 @@ header img {
 .tecnologias {
     display: flex;
     margin-top: 50px;
-    gap: 50px;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
     
 }
 
@@ -193,17 +195,21 @@ header img {
 
 /* Hobbies */
 
-.hobbies-container {
+.hobbies {
     padding: 70px 15% 50px 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
+
 
 .pasatiempos {
     display: flex;
     margin-top: 50px;
     gap: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .pasatiempos-item{
@@ -237,6 +243,8 @@ header img {
     display: flex;
     margin-top: 50px;
     gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .formacion-lista-item {
@@ -281,10 +289,11 @@ header img {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .encriptador-container img {
-    width: 800px;
+    width: 600px;
     box-shadow: 5px 5px 10px 3px rgba(20, 20, 20, 0.2);
 }
 
@@ -404,8 +413,19 @@ footer {
     font-size: 18px;
     outline: none;
     border-radius: 5px;
-    border: 0;
+    border: 3px solid transparent;
+    transition: all 0.2s;
 }
+
+.input-item:focus {
+    border-bottom-color:  #529dff;
+    /* border-bottom: #2A7AE4; */
+}
+
+.input-item:valid {
+    border-bottom-color: #80808062;
+}
+
 
 #asunto {
     padding: 20px 15px;
@@ -446,8 +466,65 @@ strong {
 }
 
 
+/* Responsive */
+
+
 /* Para Tablets */
-@media (min-width: 768px){
+@media (max-width: 768px){
+
+    .menu {
+        margin: 40px 5% 70px 5%;
+        justify-content: space-between;
+    }
+
+    .no-menu {
+        display: none;
+    }
+
+    .titulo-container {
+        margin: 0 5% 0 5%;
+    }
+
+    .descripcion h2 {
+        font-size: 1.5rem;
+    }
+
+    .descripcion h3 {
+        font-size: 1rem;
+    }
+
+    .perfil-imagen {
+        width: 200px;
+        height: 200px;
+        /* border-radius: 50%;
+        box-shadow: 5px 5px 20px 5px rgba(20, 20, 20, 0.2);
+        margin-left: 50px; */
+    }
+
+    /* Sobre mi */
+
+    .sobre-mi {
+        padding: 60px 5% 60px 5%;
+    }
+
+    /* Formacion academica */
+    .formacion-lista-item h2, .formacion-lista-item p {
+        text-align: center;
+    }
+
+    .contenedor-img {
+        width: 550px;
+    }
+
+    /* Contacto */
+    .contacto-container {
+        justify-content: center;
+        padding: 50px 0;
+    }
+
+    .img-1 {
+        display: none;
+    }
 
 }
 
