@@ -536,6 +536,10 @@ strong {
 
 /* Para dispositivos mobiles */
 @media (max-width: 360px){
+    .menu-lista-item{
+        display: none;
+    }
+
     .titulo-container {
         flex-direction: column;
         align-items: normal;
@@ -559,11 +563,13 @@ strong {
     }
 
     .contenedor-img {
+        width: 220px;
         height: 200px;
+        border-radius: 10px;
     }
 
     .encriptador-container img {
-        width: 100%;
+        width: 250px;
     }
 
     .parrafo-container p {
