@@ -12,6 +12,7 @@ body{
 .todo {
     display: flex;
     flex-direction: column;
+    padding: 0 25px;
 }
 
 /* Header */
@@ -29,7 +30,6 @@ body{
 
 .negrita {
     font-weight: 700;
-    
     color: #464646;
 }
 
@@ -293,7 +293,7 @@ header img {
 }
 
 .encriptador-container img {
-    width: 600px;
+    width: 900px;
     box-shadow: 5px 5px 10px 3px rgba(20, 20, 20, 0.2);
 }
 
@@ -516,6 +516,11 @@ strong {
         width: 550px;
     }
 
+    /* Experiencia */
+    .encriptador-container img {
+        width: 600px;
+    }
+
     /* Contacto */
     .contacto-container {
         justify-content: center;
@@ -530,6 +535,39 @@ strong {
 
 
 /* Para dispositivos mobiles */
-@media (min-width: 360px){
+@media (max-width: 360px){
+    .titulo-container {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .perfil-imagen {
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+
+    .descripcion {
+        width: auto;
+    }
+
+    .texto-sobre-mi p {
+        font-size: 0.9rem;
+    }
+
+    .skills {
+        padding: 50px 5%;
+    }
+
+    .contenedor-img {
+        height: 200px;
+    }
+
+    .encriptador-container img {
+        width: 100%;
+    }
+
+    .parrafo-container p {
+        font-size: 0.9rem;
+    }
 
 }
